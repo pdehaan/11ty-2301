@@ -1,0 +1,11 @@
+---
+item: 'This is [my frontmatter link](https://foo.bar){target="_blank"}'
+---
+
+<section data-render>
+{%- markdown %}{{ item | safe }}{% endmarkdown -%}
+</section>
+
+<section data-render-inline>
+{%- markdown true %}{{ item | safe }}{% endmarkdown -%}
+</section>
